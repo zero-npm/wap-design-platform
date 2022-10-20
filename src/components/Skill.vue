@@ -1,26 +1,10 @@
 <template>
   <div>
-    <van-search
-      v-model="searchKey"
-      placeholder="请输入搜索关键词"
-      @search="onSearch"
-      @cancel="onCancel"
-    />
+    <van-search v-model="searchKey" placeholder="请输入搜索关键词" @search="onSearch" @cancel="onCancel" />
     <van-cell-group>
-      <van-cell
-        :title="item.skill_name"
-        :value="item.skill_id"
-        v-for="(item, index) in list"
-        :key="index"
-      />
+      <van-cell :title="item.skill_name" :value="item.skill_id" v-for="(item, index) in list" :key="index" />
     </van-cell-group>
-    <van-button
-      round
-      type="info"
-      icon="plus"
-      class="addButtton"
-      @click="pageEdit"
-    ></van-button>
+    <van-button round type="info" icon="plus" class="addButtton" @click="pageEdit"></van-button>
   </div>
 </template>
 <script>

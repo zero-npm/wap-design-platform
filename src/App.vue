@@ -2,6 +2,7 @@
   <div id="app">
 
     <router-view></router-view>
+    <div style="height:12vh"></div>
     <van-tabbar v-model="active" @change="onChange">
       <van-tabbar-item icon="home-o">首页</van-tabbar-item>
       <van-tabbar-item icon="send-gift-o">预览</van-tabbar-item>

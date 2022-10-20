@@ -4,7 +4,7 @@ import VueRouter from "vue-router";
 import Home from "@/pages/Home.vue";
 import Preview from "@/pages/Preview.vue";
 import Mine from "@/pages/Mine.vue";
-import PageEdit from "@/pages/PageEdit.vue";
+import MapEdit from "@/pages/MapEdit.vue";
 import TempEdit from "@/pages/TempEdit.vue";
 Vue.use(VueRouter);
 
@@ -24,8 +24,8 @@ export default new VueRouter({
             component:Mine
         },
         {
-            path:"/pageEdit",
-            component:PageEdit
+            path:"/mapEdit",
+            component:MapEdit
         },
         {
             path:"/tempEdit",
