@@ -1,12 +1,21 @@
 import {
     Service
 } from './service'
-export function getMaplist(searchKey) {
+export function getQuyulist(searchKey) {
     return Service({
-        url: '/user/mapConfig',
+        url: '/admin/quyuList',
         method: 'get',
         params: {
             searchKey
+        }
+    })
+}
+export function getQuyuDetail(id) {
+    return Service({
+        url: '/admin/quyuDetail',
+        method: 'get',
+        params: {
+            id
         }
     })
 }
