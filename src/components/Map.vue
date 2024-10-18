@@ -1,16 +1,15 @@
 <template>
-    <div style="width: 7000px;">
-        <div v-for="(item, index) in map" :key="index">
-            <input type="text" style="width: 400px;" v-for="(cItem, cIndex) in map[index]" :key="cIndex" :value="cItem"
-                @input="mapChange($event, index, cIndex)" />
+    <div>
+        <div v-for="(item,index) in quyuList" :key="index">
+            <van-cell :title="item" value="编辑" />
         </div>
-        <button @click="submit">获取地图</button>
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
+            quyuList:["东海渔村","长安城"],
             map: []
         }
     },
